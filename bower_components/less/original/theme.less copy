@@ -1,0 +1,445 @@
+/*!
+ * Your Theme Name v0.1.0
+ *
+ * Copyright 2013 Your Name
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * This theme was built using the Themestrap Bootstrap Theme Kit.
+ * https://github.com/divshot/themestrap
+ */
+
+@import "bootstrap.less";
+
+// Add CSS Customizations to your theme here.
+
+// Toolbar
+
+.collapse{
+	background:#45484d; /* Old browsers */ background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6+ */ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */ background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */ background: -o-linear-gradient(top,  #45484d 0%,#000000 100%); /* Opera 11.10+ */ background: -ms-linear-gradient(top,  #45484d 0%,#000000 100%); /* IE10+ */ background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+#toolbar{
+	background:@content-bg-color;
+	margin-left: -7.5px; 
+    margin-right: -7.5px;
+    
+}  
+ 
+.cart-link{
+	float:right;
+}
+
+
+.toolbar{
+	padding-right:25px;
+}
+
+.toolbar > li {
+	background:@content-bg-color;
+	padding:10px;
+}
+.toolbar > li > a{
+	padding:0px 0px;
+
+}
+
+
+// Header Classes
+#header-row{
+	margin-top:@margin-standard*2;	
+}
+
+#logo{
+	padding-left: 10px;
+}
+
+
+.nav-large-down{
+	margin-top:@margin-big;
+}
+
+.nav-pills > li  {
+	padding: @nav-pills-li-margin;
+}
+.dropdown-menu > li{
+	color:@brand-primary;
+}
+.main-nav > li > a, .main-nav > li > a:focus, .dropdown-menu > li > a{
+	border-radius:@nav-pills-border-radius;
+	background-color: @bg-dark !important;
+	letter-spacing: @headings-nav-letter-spacing;
+	color: @brand-primary;
+}
+
+.nav-pills > li {
+	margin-left:0px,
+}
+
+.nav-pills > li:last-child{
+	padding-right:1px;
+}
+.nav-pills > li > a:hover {
+	background-color:#76961a;
+}
+
+.nav-pills > li + li{
+	margin-left: auto;
+}
+
+.nav-small-top-margin{
+	margin-top:40px;
+}
+
+
+
+
+
+// Home-Page-Headline
+
+#home-headline{
+	text-align:center;
+}
+
+// Home-Page-Banner
+
+.home-banner{
+	width:100%;
+	padding-right:1px;
+	padding-top: 1px;
+}
+
+
+// Typography
+
+h1{
+	font-size: 21px;
+    margin-top: 20px !important;
+    line-height: 1.5;
+}
+h2,h3{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+h2{
+font-size: @font-size-base;
+}
+
+h3{
+	font-size:16px;
+	text-transform: uppercase;
+}
+#nav-row a{
+	text-transform:uppercase;
+}
+
+
+a {
+	font-family: 'Roboto Condensed';
+	color: @bg-dark;	
+}
+
+// Home-Page-Central-Content
+
+
+.box-content-row{
+	margin:	@padding-thumbs;
+}
+
+.main-content-boxes{
+	padding:@padding-small;
+}
+
+.home-teaser, .cta-startpage-teaser-last > a > img, .cta-startpage-teaser > a > img {
+	width: 100%;
+}
+.cta-startpage-teaser-last > a > img{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.box-margin{
+	margin-top: @margin-standard;
+}
+.home-thumb{
+	width: 100%;
+	background-color: #FFFFFF;
+    border: 1px solid #E2E2E2;
+    padding: 3%;
+    margin-bottom:15px;
+}
+
+.content-box{
+	background-color:@content-bg-color;
+}
+
+
+.box-content{
+	padding: @padding-box;
+}
+
+.box-grid {
+    margin-bottom: 2px;
+}
+.teaser-fix{
+	max-width: 68%;
+	margin-left:15%;
+}
+
+.content-box-tipp {
+background: none;	
+padding: 0 0 10px 0;
+}
+
+
+.categories-home > a{
+	text-decoration:underline;
+}
+
+.box-title{
+	background-color: @content-box-title-bg-color;
+	color: @brand-primary;
+	text-align: @center-text;
+	line-height: @headings-line-height;
+}
+
+
+
+
+
+
+
+
+.fb-like{
+	margin-top:4px;
+}
+
+
+
+
+
+
+.no-padding{
+	padding:0;
+}
+
+
+
+// Footer
+
+.footer-links{
+	 border-top: 1px dotted @bg-dark;
+	 color: @brand-lighter;
+	 font-size:12px;
+	 padding: 10px 0 15px 0;
+}
+.footer-links > div > ul {
+	list-style:none;
+	padding-left:0px;
+}
+.footer-links > div {
+	margin-right:3%;
+}
+
+.footer-links > div > ul > li:first-child{
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.footer-links > div > ul > li > a{
+	color: @brand-lighter;
+}
+.footer-icons > ul > li{
+	word-wrap: break-word;
+}
+.footer-icons > ul > li > a > img {
+	width:80%;
+	padding: 5px 0 5px 0;
+	min-width: 70px;
+	max-width:90px;
+}
+
+#user-rating{
+	min-width: 110px;
+}
+.box-extend{
+	padding-bottom:40px;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media all and (max-width: 544px) {
+
+#logo{
+	margin-left: auto;
+	margin-right:auto;
+	width: 177px;
+
+}
+
+.nav-pills > li{
+	padding-right:1px;
+	margin-left:0px;
+}
+
+.home-thumb{
+	margin-bottom: 20px;
+}
+
+.box-extend{
+	padding-bottom:40px;
+}
+
+.footer-links > div {
+	margin-right:0;
+}
+
+}
+
+
+.tipp-margin {
+    margin-top: 2%;
+}
+
+.down-ten{
+	margin-top:10px;
+}
+
+.main-nav{
+	position: relative;
+}
+
+// drop down menu
+.dropdown-menu{
+	border-radius:0px;
+	margin-top:-3px;
+	background: @bg-dark;
+	width:100%;
+	padding: 15px 10px;
+  
+}
+
+
+
+
+@media all and (min-width: 550px) and  (max-width: 990px){
+	  .container {
+	    max-width: 97%;
+	  }
+
+	  #logo{
+		margin-left: auto;
+		margin-right:auto;
+		width:auto;
+	}
+
+	
+	.tipp-margin{
+	margin-top:3%;
+	}
+
+	.footer-links > div {
+	margin-right:3%;
+}
+
+
+}
+
+
+@media all and (min-width: 992px) and (max-width: 1199px) {
+.footer-links > div {
+	margin-right:3%;
+}
+}
+
+ .container {
+    max-width: 995px;
+    padding: 0 15px 50px 15px;
+  }
+// xs offset addition
+
+.col-xs-offset-12 {
+	margin-left: 100%;
+}
+.col-xs-offset-11 {
+	margin-left: 91.66666666666666%;
+}
+.col-xs-offset-10 {
+	margin-left: 83.33333333333334%;
+}
+.col-xs-offset-9 {
+	margin-left: 75%;
+}
+.col-xs-offset-8 {
+	margin-left: 66.66666666666666%;
+}
+.col-xs-offset-7 {
+	margin-left: 58.333333333333336%;
+}
+.col-xs-offset-6 {
+	margin-left: 50%;
+}
+.col-xs-offset-5 {
+	margin-left: 41.66666666666667%;
+}
+.col-xs-offset-4 {
+	margin-left: 33.33333333333333%;
+}
+.col-xs-offset-3 {
+	margin-left: 25%;
+}
+.col-xs-offset-2 {
+	margin-left: 16.666666666666664%;
+}
+.col-xs-offset-1 {
+	margin-left: 8.333333333333332%;
+}
+.col-xs-offset-0 {
+	margin-left: 0;
+}
+ 
+/* Ensure that all of the zero offsets are available - recent SASS version did not include .col-sm-offset-0 */
+@media (min-width: 768px) {
+	.col-sm-offset-0,
+	.col-md-offset-0,
+	.col-lg-offset-0 {
+		margin-left: 0;
+	}
+}
+    
+// 5 Coumns
+
+@media (min-width: 768px){
+    .fivecolumns .col-2, .fivecolumns .col-sm-2, .fivecolumns .col-lg-2  {
+        width: 20%;
+        *width: 20%;
+    }
+}
+@media (min-width: 1200px) {
+    .fivecolumns .col-2, .fivecolumns .col-sm-2, .fivecolumns .col-lg-2 {
+        width: 20%;
+        *width: 20%;
+    }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+    .fivecolumns .col-2, .fivecolumns .col-sm-2, .fivecolumns .col-lg-2 {
+        width: 20%;
+        *width: 20%;
+    }
+}
+
